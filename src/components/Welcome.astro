@@ -8,7 +8,7 @@ const details = await getCollection("details");
 <div id="container" class="m-auto flex flex-col items-center gap-5 p-6 max-w-4xl">
   {
     details.map((detail: object) => (
-      <div class="w-auto p-5 bg-Indian-Khaki-50 rounded-xl shadow-2xl inline-flex flex-col sm:flex-row justify-start items-center gap-5 self-stretch hover:scale-102 cursor-pointer transition-all">
+      <div class="w-auto p-5 bg-Indian-Khaki-50 rounded-xl shadow-lg inline-flex flex-col sm:flex-row justify-start items-center gap-5 self-stretch hover:scale-102 cursor-pointer transition-all">
         <img class="sm:max-w-56 self-stretch aspect-square rounded-xl" src=`/public/${detail.data.img}` />
         <div class="w-full self-stretch flex flex-col justify-start items-start gap-5">
           <div class="justify-start text-Spicy-Mix-600 text-4xl font-semibold font-cormorant">
