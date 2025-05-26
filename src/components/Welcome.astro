@@ -5,13 +5,15 @@ const details = await getCollection("details");
 
 ---
 
-<div id="container" class="flex-col items-center gap-5 p-5">
+<div id="prueba" class="justify-start text-Spicy-Mix-600 text-4xl font-semibold font-CormorantGaramond">Depilación</div>
+
+<div id="container" class="flex flex-col items-center gap-5 p-5">
   {
     details.map((detail: object) => (
-      <div class="w-96 p-5 bg-stone-100 rounded-[20px] shadow-[10px_10px_25.700000762939453px_0px_rgba(0,0,0,0.25)] inline-flex flex-col justify-start items-center gap-5">
-        <img class="self-stretch h-96 rounded-[20px]" src=`/public/${detail.data.img}` />
+      <div class="w-96 p-5 bg-Indian-Khaki-50 rounded-[20px] shadow-[10px_10px_25.700000762939453px_0px_rgba(0,0,0,0.25)] inline-flex flex-col justify-start items-center gap-5">
+        <img class="self-stretch aspect-square rounded-xl" src=`/public/${detail.data.img}` />
         <div class="self-stretch flex flex-col justify-start items-start gap-5">
-          <div class="justify-start text-Spicy-Mix-600 text-4xl font-semibold font-['Cormorant_Garamond']">
+          <div class="justify-start text-Spicy-Mix-600 text-4xl font-semibold font-CormorantGaramond">
             {detail.data.title}
           </div>
 
@@ -19,10 +21,10 @@ const details = await getCollection("details");
             {detail.data.options.map(
               (option: { name: string; price: string }) => (
                 <div class="self-stretch inline-flex justify-between items-center">
-                  <div class="justify-start text-Spicy-Mix-600 text-base font-normal font-['Raleway']">
+                  <div class="justify-start text-Spicy-Mix-600 text-base font-normal font-Raleway">
                     {option.name}
                   </div>
-                  <div class="justify-start text-Spicy-Mix-600 text-base font-bold font-['Raleway']">
+                  <div class="justify-start text-Spicy-Mix-600 text-base font-bold font-Raleway">
                     {option.price}
                   </div>
                 </div>
@@ -33,6 +35,6 @@ const details = await getCollection("details");
       </div>
     ))
   }
-
-  <style></style>
 </div>
+
+<style></style>

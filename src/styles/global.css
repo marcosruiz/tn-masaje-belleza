@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('../assets/fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#prueba {
+  font-family: 'CormorantGaramond', 'Courier New', Courier, monospace;
+}
+
+
+@config "../../tailwind.config.mjs";
