@@ -5,15 +5,13 @@ const details = await getCollection("details");
 
 ---
 
-<div id="prueba" class="justify-start text-Spicy-Mix-600 text-4xl font-semibold font-CormorantGaramond">Depilación</div>
-
-<div id="container" class="flex flex-col items-center gap-5 p-5">
+<div id="container" class="m-auto flex flex-col items-center gap-5 p-5 max-w-4xl">
   {
     details.map((detail: object) => (
-      <div class="w-96 p-5 bg-Indian-Khaki-50 rounded-[20px] shadow-[10px_10px_25.700000762939453px_0px_rgba(0,0,0,0.25)] inline-flex flex-col justify-start items-center gap-5">
-        <img class="self-stretch aspect-square rounded-xl" src=`/public/${detail.data.img}` />
-        <div class="self-stretch flex flex-col justify-start items-start gap-5">
-          <div class="justify-start text-Spicy-Mix-600 text-4xl font-semibold font-CormorantGaramond">
+      <div class="w-auto p-5 bg-Indian-Khaki-50 rounded-xl shadow-2xl inline-flex flex-col sm:flex-row justify-start items-center gap-5 self-stretch">
+        <img class="sm:max-w-56 self-stretch aspect-square rounded-xl" src=`/public/${detail.data.img}` />
+        <div class="w-full self-stretch flex flex-col justify-start items-start gap-5">
+          <div class="justify-start text-Spicy-Mix-600 text-4xl font-semibold font-cormorant">
             {detail.data.title}
           </div>
 

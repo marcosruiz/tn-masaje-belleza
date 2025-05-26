@@ -51,7 +51,7 @@ export default {
         },
       },
       fontFamily: {
-        CormorantGaramond: ["CormorantGaramond", "serif"],
+        cormorant: ["'Cormorant Garamond'", "serif"],
         PlayfairDisplay: ["PlayfairDisplay", "serif"],
         Raleway: ["Raleway", "sans-serif"],
       },
