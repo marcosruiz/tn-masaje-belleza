@@ -15,3 +15,11 @@
 }
 
 @config "../../tailwind.config.mjs";
+
+h1 {
+  justify-content: flex-start;
+  color: #805744;
+  font-size: var(--text-4xl) /* 2.25rem = 36px */;
+  line-height: var(--tw-leading, var(--text-4xl--line-height) /* calc(2.5 / 2.25) ≈ 1.1111 */
+}
+
