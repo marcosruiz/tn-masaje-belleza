@@ -12,7 +12,7 @@ options: [
 ]
 ---
 
-### Depilación Facial
+## Depilación Facial
 
 Retiro el vello no deseado del rostro con técnicas suaves y precisas, respetando tu tipo de piel. Trabajo zonas como el labio superior, mentón, mejillas o frente, dejando tu piel limpia, lisa y lista para lucir radiante.
 

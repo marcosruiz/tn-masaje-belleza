@@ -16,10 +16,54 @@
 
 @config "../../tailwind.config.mjs";
 
-h1 {
-  justify-content: flex-start;
+
+h1, h2, h3, h4, h5, h6 {
   color: #805744;
-  font-size: var(--text-4xl) /* 2.25rem = 36px */;
-  line-height: var(--tw-leading, var(--text-4xl--line-height) /* calc(2.5 / 2.25) ≈ 1.1111 */
+  font-family: 'Cormorant Garamond', serif;
+  --tw-font-weight: var(--font-weight-semibold) /* 600 */;
+  font-weight: var(--font-weight-semibold) /* 600 */;
+  line-height: var(--tw-leading, var(--text-4xl--line-height) /* calc(2.5 / 2.25) ≈ 1.1111 */);
 }
 
+h1 {
+  font-size: var(--text-5xl) /* 3rem = 48px */;
+}
+
+h2 {
+  font-size: var(--text-4xl) /* 2.25rem = 36px */;
+}
+
+h3 {
+  font-size: var(--text-3xl) /* 1.875rem = 30px */;
+}
+
+h4 {
+  font-size: var(--text-2xl) /* 1.5rem = 24px */;
+}
+
+h5 {
+  font-size: var(--text-xl) /* 1.25rem = 20px */;
+}
+
+h6 {
+  font-size: var(--text-lg) /* 1.125rem = 18px */;
+}
+
+p, li {
+  color: #805744;
+  font-size: var(--text-base) /* 1rem = 16px */;
+  line-height: var(--tw-leading, var(--text-base--line-height) /* calc(1.5 / 1) ≈ 1.5 */);
+  --tw-font-weight: var(--font-weight-normal) /* 400 */;
+  font-weight: var(--font-weight-normal) /* 400 */;
+  font-family: Raleway, sans-serif;
+}
+
+li {
+  margin-left: 1.5rem; /* 24px */
+  list-style-type: disc;
+  padding-left: 1.5rem; /* 24px */
+  position: relative;
+  text-indent: -1rem; /* 18px */
+  
+
+}

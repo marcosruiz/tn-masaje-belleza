@@ -18,7 +18,14 @@ const {Content} = await render(detail);
 ---
 
 <Layout>
-    <h1>{title}</h1>
-    <img src={`/public/${img}`} alt={title} class="w-full max-w-2xl rounded-lg shadow-lg" />
-    <Content/>
+    <div transition:name={`frame-${detail.slug}`} class="w-auto p-5 bg-Indian-Khaki-50 rounded-xl shadow-2xl inline-flex flex-col justify-start gap-5 self-stretch">
+        <div class="flex flex-col items-center gap-3">
+            <h1 transition:name={`title-${detail.slug}`}>{title}</h1>
+            <!-- <img 
+            src={`/public/${img}`} 
+            alt={title} 
+            class="w-full rounded-4xl shadow-lg aspect-[3/1] object-cover" />-->
+        </div>
+        <Content/>
+    </div>
 </Layout>
