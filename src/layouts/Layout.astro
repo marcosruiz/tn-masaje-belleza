@@ -10,14 +10,20 @@ import { ClientRouter } from 'astro:transitions';
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>Tamara Nelida</title>
     <ClientRouter />
   </head>
+  
   <body class="bg-Indian-Khaki-50">
     <div id="container" class="m-auto flex flex-col items-center gap-5 p-6 max-w-4xl">
       <slot />
     </div>
   </body>
+  
+  <!--  -->
+  <div class="-z-10 fixed w-5xl aspect-square bg-[#BDAA8A] rounded-full opacity-20 blur-2xl -top-full -right-150"></div>
+  <div class="-z-10 fixed w-6xl aspect-square bg-[#BDAA8A] rounded-full opacity-30 blur-3xl top-150 -left-150"></div>
+
 </html>
 
 <style>

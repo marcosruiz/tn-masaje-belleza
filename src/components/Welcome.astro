@@ -3,7 +3,14 @@ import { getCollection, getEntryBySlug } from "astro:content";
 
 const details = await getCollection("details");
 
+
 ---
+
+<img id="logo"
+  src="/public/tn_logo_no_background.png"
+  alt="TN logo"
+  class="w-lg transition-all duration-300 ease-in-out">
+
 
 
 {
@@ -38,4 +45,45 @@ const details = await getCollection("details");
   ))
 }
 
+<div class="w-xs p-5 bg-Indian-Khaki-50 rounded-xl shadow-lg flex flex-col gap-3">
+
+  <div class="justify-start text-Spicy-Mix-600 text-4xl font-semibold font-cormorant">
+    Contacto
+  </div>
+
+  <a href="https://wa.me/34642365488" target="_blank" class="flex flex-row justify-start gap-3 items-center hover:underline cursor-pointer">
+    <div class="bg-Spicy-Mix-600 rounded-full p-1">
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="text-Indian-Khaki-50 icon icon-tabler icons-tabler-filled icon-tabler-device-mobile"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 2a3 3 0 0 1 2.995 2.824l.005 .176v14a3 3 0 0 1 -2.824 2.995l-.176 .005h-8a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005h8zm-4 14a1 1 0 0 0 -.993 .883l-.007 .117l.007 .127a1 1 0 0 0 1.986 0l.007 -.117l-.007 -.127a1 1 0 0 0 -.993 -.883zm1 -12h-2l-.117 .007a1 1 0 0 0 0 1.986l.117 .007h2l.117 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" /></svg>
+    </div>
+    <div class="text-Spicy-Mix-600 text-base font-bold font-Raleway">+34 642 365 488</div>
+  </a>
+
+  <a href="https://www.instagram.com/beautystudionelida_zgz/" target="_blank" class="flex flex-row justify-start gap-3 items-center hover:underline cursor-pointer">
+    <div class="bg-Spicy-Mix-600 rounded-full p-1">
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="text-Indian-Khaki-50 icon icon-tabler icons-tabler-filled icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-8a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-4 5a4 4 0 0 0 -3.995 3.8l-.005 .2a4 4 0 1 0 4 -4m4.5 -1.5a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" /></svg>
+    </div>
+    <div class="text-Spicy-Mix-600 text-base font-bold font-Raleway">@beautystudionelida_zgz</div>
+  </a>
+
+  <a href="https://maps.app.goo.gl/uGHxDUiuQfptGXU1A" class="flex flex-row justify-start gap-3 items-center hover:underline cursor-pointer">
+    <div class="bg-Spicy-Mix-600 rounded-full p-1">
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="text-Indian-Khaki-50 icon icon-tabler icons-tabler-filled icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg>
+    </div>
+    <div class="text-Spicy-Mix-600 text-base font-bold font-Raleway">Brecha de Rolando, 7, Zaragoza</div>
+  </a>
+</div>
+
 <style></style>
+
+<script>
+window.addEventListener('scroll', () => {
+    const logo = document.getElementById('logo');
+    if (window.scrollY < 10) {
+      logo.classList.remove('w-lg');
+      logo.classList.add('w-3xs'); // Cambia a un tamaño más pequeño (6rem)
+    } else {
+      logo.classList.remove('w-lg');
+      logo.classList.add('w-3xs');
+    }
+  });
+</script>
